@@ -6,7 +6,7 @@
     "setup-nextjs": "./install.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "prettier --write ."
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/hugocruzlfc/nextjs-setup/issues"
   },
-  "homepage": "https://github.com/hugocruzlfc/nextjs-setup#readme"
+  "homepage": "https://github.com/hugocruzlfc/nextjs-setup#readme",
+  "devDependencies": {
+    "prettier": "^3.5.3"
+  }
 }
