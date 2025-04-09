@@ -7,7 +7,7 @@ const sourceDir = path.join(__dirname, 'config');
 const destDir = process.cwd();
 
 try {
-  // Copiar archivos de config
+  // Copiar todos los archivos de config, incluyendo package.json
   fs.readdirSync(sourceDir).forEach(file => {
     const sourcePath = path.join(sourceDir, file);
     const destPath = path.join(destDir, file);
@@ -19,12 +19,15 @@ try {
     console.log(`Copiado: ${file}`);
   });
 
-  // Instalar dependencias y preparar Husky
-  console.log('Instalando dependencias y configurando Husky...');
-  execSync('npm install', { stdio: 'inherit' });
-  execSync('npx husky install', { stdio: 'inherit' });
+  // Instalar dependencias desde el package.json copiado
+  console.log('Instalando dependencias...');
+  execSync('npm install', { stdio: 'inherit', cwd: destDir });
 
-  console.log('¡Configuración aplicada con éxito!');
+  // Configurar Husky
+  console.log('Configurando Husky...');
+  execSync('npx husky install', { stdio: 'inherit', cwd: destDir });
+
+  console.log('¡Proyecto configurado con éxito!');
 } catch (error) {
   console.error('Error:', error.message);
   process.exit(1);
