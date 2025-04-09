@@ -18,7 +18,7 @@ Un template personalizado para proyectos Next.js con una configuración lista pa
 1. Instala el paquete desde npm:
 
    ```bash
-   npm install @hugocruzlfc/nextjs-setup
+   npm install @hugo_cruz/nextjs-setup
    ```
 
 2. Ejecuta el comando para configurar tu proyecto:
