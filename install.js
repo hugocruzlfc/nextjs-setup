@@ -1,14 +1,14 @@
 #!/usr/bin/env node
-const fs = require('fs');
-const path = require('path');
-const { execSync } = require('child_process');
+const fs = require("fs");
+const path = require("path");
+const { execSync } = require("child_process");
 
-const sourceDir = path.join(__dirname, 'config');
-const destDir = process.cwd();
+const sourceDir = path.join(__dirname, "template"); // Contenido de config/
+const destDir = process.cwd(); // Raíz del proyecto destino
 
 try {
-  // Copiar todos los archivos de config, incluyendo package.json
-  fs.readdirSync(sourceDir).forEach(file => {
+  // Copiar todo el contenido de template/ directamente a la raíz del destino
+  fs.readdirSync(sourceDir).forEach((file) => {
     const sourcePath = path.join(sourceDir, file);
     const destPath = path.join(destDir, file);
     if (fs.lstatSync(sourcePath).isDirectory()) {
@@ -19,16 +19,16 @@ try {
     console.log(`Copiado: ${file}`);
   });
 
-  // Instalar dependencias desde el package.json copiado
-  console.log('Instalando dependencias...');
-  execSync('npm install', { stdio: 'inherit', cwd: destDir });
+  // Instalar dependencias
+  console.log("Instalando dependencias...");
+  execSync("npm install", { stdio: "inherit", cwd: destDir });
 
   // Configurar Husky
-  console.log('Configurando Husky...');
-  execSync('npx husky install', { stdio: 'inherit', cwd: destDir });
+  console.log("Configurando Husky...");
+  execSync("npx husky install", { stdio: "inherit", cwd: destDir });
 
-  console.log('¡Proyecto configurado con éxito!');
+  console.log("¡Proyecto configurado con éxito!");
 } catch (error) {
-  console.error('Error:', error.message);
+  console.error("Error:", error.message);
   process.exit(1);
 }
