@@ -6,7 +6,9 @@
     "setup-nextjs": "./install.js"
   },
   "scripts": {
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "check-format": "prettier --check .",
+    "ci": "npm run check-format"
   },
   "repository": {
     "type": "git",
