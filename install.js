@@ -48,6 +48,18 @@ try {
   stopCopyLoading();
   console.log('Configuration files copied! ✅');
 
+  // Inicializar Git antes de instalar dependencias
+  console.log('Initializing Git repository... ⌛️');
+  const stopGitLoading = showLoading('Initializing Git repository ⌛️');
+  try {
+    execSync('git init', { stdio: 'inherit', cwd: destDir });
+  } catch (gitError) {
+    stopGitLoading();
+    throw new Error(`Failed to initialize Git: ${gitError.message}`);
+  }
+  stopGitLoading();
+  console.log('Git repository initialized! ✅');
+
   // Instalar dependencias con animación y fallback
   console.log('Installing dependencies... ⌛️');
   const stopDepLoading = showLoading('Installing dependencies ⌛️');
