@@ -1,6 +1,6 @@
 {
   "name": "@hugo_cruz/nextjs-setup",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "A custom template for Next.js",
   "bin": {
     "setup-nextjs": "./install.js"

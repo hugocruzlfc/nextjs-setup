@@ -1,5 +1,11 @@
 # @hugocruzlfc/nextjs-setup
 
+## 1.1.0
+
+### Minor Changes
+
+- 0517b28: add pnpm management
+
 ## 1.0.2
 
 ### Patch Changes
