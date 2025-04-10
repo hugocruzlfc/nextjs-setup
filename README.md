@@ -1,48 +1,47 @@
 # @hugo_cruz/nextjs-setup
 
-Un template personalizado para proyectos Next.js con una configuración lista para usar, incluyendo Tailwind CSS, Prettier, Husky, ESLint y más. Ideal para arrancar rápido con un setup sólido y organizado.
+A custom template for Next.js projects with a ready-to-use setup, including Tailwind CSS, Prettier, Husky, ESLint and more. Ideal for a quick start with a solid and organized setup.
 
-## Características
+## What's included?
 
-- **Next.js 15**: Configurado con soporte para Turbopack.
-- **Tailwind CSS**: Estilos modernos y rápidos con PostCSS.
-- **Prettier**: Formateo automático con plugins para Tailwind y organización de imports.
-- **ESLint**: Linting integrado con la config de Next.js y Prettier.
-- **Husky**: Hooks de Git para mantener el código limpio antes de cada commit.
-- **TypeScript**: Soporte completo para un desarrollo más seguro.
-- **Commitizen**: Commits estandarizados con `cz-conventional-changelog`.
-- **Estructura base**: Incluye carpetas como `lib/`, y `public/` para empezar YA.
+- Next.js 15 with Turbopack support.
+- Tailwind CSS v4 for fast styling.
+- TypeScript for safer code.
+- Prettier with plugins for sorting imports and Tailwind.
+- ESLint 9 configured with Next.js.
+- Commitizen for standardized commits with `cz-conventional-changelog`.
+- Husky for automatic Git hooks.
+- Basic structure: `src/app`, `src/lib`.
 
-## Requisitos
+## Requirements
 
-Este proyecto usa **pnpm** como gestor de paquetes para una instalación más rápida y eficiente. Asegúrate de tenerlo instalado globalmente antes de empezar:
+This project is designed to use **pnpm** as a package manager, taking advantage of its speed and efficiency. If you don't have `pnpm` installed, **npm** will be used as an alternative, but we recommend installing it globally with `npm install -g pnpm` to get the most out of it. Also, you need **Node.js 20 or higher** to make everything run smoothly.
 
-```bash
-npm install -g pnpm
-```
+## Installation
 
-## Instalación
-
-1. Instala el paquete desde npm:
+1. Install the package from npm:
 
    ```bash
    npm install @hugo_cruz/nextjs-setup
    ```
 
-2. Ejecuta el comando para configurar tu proyecto:
+2. Execute the command to set up your project:
    ```bash
    npx setup-nextjs
    ```
 
-## Autor
+## Author
 
 - Hugo Cruz de la Torres [Linkedin](https://www.linkedin.com/in/hugo-cruz-7a0630197)
 
-## Contribuciones
+## Contributions
 
-Si quieres contribuir, ¡adelante! Abre un issue o un pull request y estaré encantado de revisarlo.
+If you want to contribute, go ahead! Open an issue or a pull request and I'll be happy to review it.
 
-## Versionado
+- [Issues](https://github.com/hugocruzlfc/nextjs-setup/issues)
+- [Pull requests](https://github.com/hugocruzlfc/nextjs-setup/pulls)
+
+## Versioning
 
 ```bash
  npx changeset

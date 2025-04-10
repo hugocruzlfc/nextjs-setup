@@ -1,90 +1,24 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with `pnpm dlx create-next-app@latest --use-pnpm`.
+# Next.js Current Version (15.1.4) Template
 
-## Getting Started
+This template is a base project in **Next.js Current Version** with everything you need to start coding fast. It comes loaded with **Tailwind CSS**, **TypeScript**, **Prettier**, **ESLint**, **Commitizen**, and **Husky** so you have a clean and ready setup. Copy the files, run the server, and get programming!
 
-Clone the repository and run `pnpm install` to install the dependencies.
+## What's included?
+- Next.js 15 with Turbopack support.
+- Tailwind CSS v4 for fast styling.
+- TypeScript for safer code.
+- Prettier with plugins for sorting imports and Tailwind.
+- ESLint 9 configured with Next.js.
+- Commitizen for standardized commits with `cz-conventional-changelog`.
+- Husky for automatic Git hooks.
+- Basic structure:  `src/app`, `src/lib`.
 
-## Development
+## Author
+- Hugo Cruz de la Torres [Linkedin](https://www.linkedin.com/in/hugo-cruz-7a0630197)
 
-Run `pnpm dev` to start the development server.
+## Contributions
+- If you want to contribute, go ahead! Open an issue or a pull request and I'll be happy to review it.
+- [Issues](https://github.com/hugocruzlfc/nextjs-setup/issues)
+- [Pull requests](https://github.com/hugocruzlfc/nextjs-setup/pulls)
 
-## Configuration step by step
 
-Install and config each package and create the necessary files for his configuration.
-
-### Commitlint
-
-[See the commitlint guide](https://commitlint.js.org/guides/getting-started.html) and [local setup](https://commitlint.js.org/guides/local-setup.html)
-
-```bash
-pnpm add --save-dev @commitlint/{cli,config-conventional}
-```
-
-Create the commitlint configuration file
-
-```bash
-echo "export default { extends: ['@commitlint/config-conventional'] };" > commitlint.config.ts
-```
-
-### Husky
-
-```bash
-pnpm add --save-dev husky
-pnpm husky init
-echo "pnpm dlx commitlint --edit \$1" > .husky/commit-msg
-```
-
-### Commitizen and cz-conventional-changelog
-
-[See the commitizen cz-cli guide](https://github.com/commitizen/cz-cli)
-
-```bash
-pnpm add -D commitizen
-pnpm dlx commitizen init cz-conventional-changelog --pnpm --save-dev --save-exact
-```
-
-Create prepare-commit-msg hook to run commitizen
-
-```bash
-echo "exec < /dev/tty && node_modules/.bin/cz --hook || true" > .husky/prepare-commit-msg
-```
-
-### Prettier and plugins
-
-```bash
-pnpm add -D prettier eslint-config-prettier eslint-config-prettier eslint-plugin-prettier
-```
-
-Create the prettier configuration file
-
-```bash
-echo "export default {plugins: ['prettier-plugin-organize-imports','prettier-plugin-tailwindcss'],
-tailwindFunctions: ['clsx'],};" > prettier.config.mjs
-```
-
-### Lint-staged
-
-```bash
-pnpm add -D lint-staged
-```
-
-And in the pre commit husky hook copy the following:
-
-```bash
-npx lint-staged
-```
-
-And the package.json copy the following:
-
-```json
- "devDependencies": {
-   ....
-  },
-  "lint-staged": {
-    "*.{js,ts}": [
-      "eslint --fix",
-      "prettier --write"
-    ],
-    "*.{md,html,json}": "prettier --write"
-  },
-```
+## Happy coding 🎉👨🏻‍💻!!!!
