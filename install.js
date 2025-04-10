@@ -21,7 +21,7 @@ try {
 
   // Instalar dependencias
   console.log('Instalando dependencias...');
-  execSync('npm install', { stdio: 'inherit', cwd: destDir });
+  execSync('pnpm install', { stdio: 'inherit', cwd: destDir });
 
   // Configurar Husky
   console.log('Configurando Husky...');
