@@ -1,5 +1,11 @@
 # @hugocruzlfc/nextjs-setup
 
+## 1.1.1
+
+### Patch Changes
+
+- 52d75cb: cleaning code
+
 ## 1.1.0
 
 ### Minor Changes
