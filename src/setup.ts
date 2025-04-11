@@ -1,12 +1,10 @@
-import * as path from 'path';
+import { copyFiles, type CopyFilesOptions } from '@utils/copy-files.js';
+import { initGit, type InitGitOptions } from '@utils/init-git.js';
 import {
-  copyFiles,
-  CopyFilesOptions,
-  initGit,
-  InitGitOptions,
   installDependencies,
-  InstallDepsOptions,
-} from './utils';
+  type InstallDepsOptions,
+} from '@utils/install-deps.js';
+import * as path from 'path';
 
 export interface SetupOptions {
   sourceDir?: string;
