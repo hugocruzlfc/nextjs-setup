@@ -1,4 +1,5 @@
 import * as path from 'path';
+import { fileURLToPath } from 'url';
 import { type CopyFilesOptions, copyFiles } from './utils/copy-files.js';
 import { type InitGitOptions, initGit } from './utils/init-git.js';
 import {
@@ -13,7 +14,11 @@ export interface SetupOptions {
 }
 
 export async function setupProject({
-  sourceDir = path.join(__dirname, '..', 'template'),
+  sourceDir = path.join(
+    path.dirname(fileURLToPath(import.meta.url)),
+    '..',
+    'template',
+  ),
   destDir = process.cwd(),
   preferredPackageManager = 'pnpm',
 }: SetupOptions = {}): Promise<void> {
