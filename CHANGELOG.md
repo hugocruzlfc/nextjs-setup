@@ -1,5 +1,11 @@
 # @hugocruzlfc/nextjs-setup
 
+## 3.1.0
+
+### Minor Changes
+
+- e655fd9: fix url template copy
+
 ## 3.0.3
 
 ### Patch Changes
