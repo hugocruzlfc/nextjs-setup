@@ -1,5 +1,11 @@
 # @hugocruzlfc/nextjs-setup
 
+## 2.1.0
+
+### Minor Changes
+
+- ef8fc0d: update nextjs15 and main config
+
 ## 2.0.1
 
 ### Patch Changes
