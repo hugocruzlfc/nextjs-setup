@@ -1,5 +1,11 @@
 # @hugocruzlfc/nextjs-setup
 
+## 2.1.1
+
+### Patch Changes
+
+- b96f3cd: add create repo control
+
 ## 2.1.0
 
 ### Minor Changes
