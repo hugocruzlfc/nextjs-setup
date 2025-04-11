@@ -1,5 +1,11 @@
 # @hugocruzlfc/nextjs-setup
 
+## 3.0.2
+
+### Patch Changes
+
+- 6c33e28: update module resolution
+
 ## 3.0.1
 
 ### Patch Changes
