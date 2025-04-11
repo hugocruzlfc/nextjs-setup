@@ -1,5 +1,11 @@
 # @hugocruzlfc/nextjs-setup
 
+## 2.0.1
+
+### Patch Changes
+
+- 6cfd4aa: update readme
+
 ## 2.0.0
 
 ### Major Changes
