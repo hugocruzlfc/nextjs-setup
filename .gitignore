@@ -1,2 +1,27 @@
 # dependencies
 /node_modules
+dist/
+
+# Archivos de entorno
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Archivos de caché y logs
+*.log
+npm-debug.log
+.pnpm-debug.log
+.yarn-integrity
+.tsbuildinfo
+
+# Archivos temporales del sistema o editores
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Cobertura de tests (si planeas añadir tests)
+coverage/
