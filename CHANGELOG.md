@@ -1,5 +1,11 @@
 # @hugocruzlfc/nextjs-setup
 
+## 3.0.3
+
+### Patch Changes
+
+- 6731205: remove aliases config
+
 ## 3.0.2
 
 ### Patch Changes
