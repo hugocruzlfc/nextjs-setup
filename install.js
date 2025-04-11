@@ -48,17 +48,23 @@ try {
   stopCopyLoading();
   console.log('Configuration files copied! ✅');
 
-  // Inicializar Git antes de instalar dependencias
-  console.log('Initializing Git repository... ⌛️');
-  const stopGitLoading = showLoading('Initializing Git repository ⌛️');
-  try {
-    execSync('git init', { stdio: 'inherit', cwd: destDir });
-  } catch (gitError) {
+  // Verificar si ya existe un repositorio Git
+  const gitDir = path.join(destDir, '.git');
+  if (!fs.existsSync(gitDir)) {
+    // Inicializar Git si no existe
+    console.log('Initializing Git repository... ⌛️');
+    const stopGitLoading = showLoading('Initializing Git repository ⌛️');
+    try {
+      execSync('git init', { stdio: 'inherit', cwd: destDir });
+    } catch (gitError) {
+      stopGitLoading();
+      throw new Error(`Failed to initialize Git: ${gitError.message}`);
+    }
     stopGitLoading();
-    throw new Error(`Failed to initialize Git: ${gitError.message}`);
+    console.log('Git repository initialized! ✅');
+  } else {
+    console.log('Git repository already exists, skipping initialization... ✅');
   }
-  stopGitLoading();
-  console.log('Git repository initialized! ✅');
 
   // Instalar dependencias con animación y fallback
   console.log('Installing dependencies... ⌛️');
