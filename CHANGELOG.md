@@ -1,5 +1,11 @@
 # @hugocruzlfc/nextjs-setup
 
+## 3.1.1
+
+### Patch Changes
+
+- 8ab5da9: update ts config
+
 ## 3.1.0
 
 ### Minor Changes
