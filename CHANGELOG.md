@@ -1,5 +1,11 @@
 # @hugocruzlfc/nextjs-setup
 
+## 3.0.0
+
+### Major Changes
+
+- 9e5d063: update tsc code
+
 ## 2.1.1
 
 ### Patch Changes
