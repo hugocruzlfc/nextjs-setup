@@ -1,5 +1,11 @@
 # @hugocruzlfc/nextjs-setup
 
+## 3.0.1
+
+### Patch Changes
+
+- 65cb3b7: add license text
+
 ## 3.0.0
 
 ### Major Changes
