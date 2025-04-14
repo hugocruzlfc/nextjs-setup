@@ -1,5 +1,11 @@
 # @hugocruzlfc/nextjs-setup
 
+## 3.1.3
+
+### Patch Changes
+
+- 4b0ed72: add commit and tag version
+
 ## 3.1.2
 
 ### Patch Changes
