@@ -1,6 +1,6 @@
 {
   "name": "@hugo_cruz/nextjs-setup",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "description": "A custom template for Next.js",
   "files": [
     "dist",

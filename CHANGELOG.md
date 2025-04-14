@@ -1,5 +1,11 @@
 # @hugocruzlfc/nextjs-setup
 
+## 3.1.2
+
+### Patch Changes
+
+- c96a844: add shadcn ui config
+
 ## 3.1.1
 
 ### Patch Changes
