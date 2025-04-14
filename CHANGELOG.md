@@ -1,5 +1,11 @@
 # @hugocruzlfc/nextjs-setup
 
+## 3.1.4
+
+### Patch Changes
+
+- 2d00756: update release script
+
 ## 3.1.3
 
 ### Patch Changes
