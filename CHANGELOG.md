@@ -1,5 +1,11 @@
 # @hugocruzlfc/nextjs-setup
 
+## 3.1.5
+
+### Patch Changes
+
+- 36a479b: add manage env variables
+
 ## 3.1.4
 
 ### Patch Changes
