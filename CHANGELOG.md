@@ -1,5 +1,11 @@
 # @hugocruzlfc/nextjs-setup
 
+## 3.1.6
+
+### Patch Changes
+
+- 36e7f02: update readme
+
 ## 3.1.5
 
 ### Patch Changes
