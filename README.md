@@ -27,7 +27,7 @@ This project is designed to use **pnpm** as a package manager, taking advantage 
 
 2. Execute the command to set up your project:
    ```bash
-   npx setup-nextjs
+   npx nextjs-setup
    ```
 
 ## Author
