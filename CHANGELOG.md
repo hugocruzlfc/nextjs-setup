@@ -1,5 +1,17 @@
 # @hugocruzlfc/nextjs-setup
 
+## 3.1.8
+
+### Patch Changes
+
+- update next current version and new features
+
+## 3.1.7
+
+### Patch Changes
+
+- 04a736a: update next version and features
+
 ## 3.1.6
 
 ### Patch Changes
